@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        function doubleNumbers(numbers) {
+    let doubled = [];
+    for (let num of numbers) {
+        doubled.push(num * 2);
+    }
+    return doubled;
+}
+
+let numbers = [4, 5, 6, 8, 9];
+console.log(doubleNumbers(numbers));
+
+function printObject(obj) {
+    for (let key in obj) {
+        console.log(`${key}: ${obj[key]}`);
+    }
+}
+
+let person = { name: "Eskinder", age: 10, city: "Addis" };
+printObject(person);
+
+function delay(strings) {
+    strings.forEach((str, index) => {
+        setTimeout(() => {
+            console.log(str);
+        }, index * 1000);
+    });
+}
+
+let words = ["Hello", "&", "Good"];
+delay(words);
+
+
+    </script>
+
+</body>
+
+</html>
